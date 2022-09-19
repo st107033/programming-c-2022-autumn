@@ -1,13 +1,16 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-	int s = 109, v, t, ans;
-	cin >> v >> t;
+int main(int argc, char* argv) {
+	int s = 109;
+	int v = 0;
+	int t = 0;
+	int ans = 0;
 
-	if (v > 0) ans = (v * t) % s;
-	else ans = s + ((v * t) % s);
+	std::cin >> v >> t;
 
-	cout << ans << endl;
-	return 0;
+	ans = (s + ((v * t) % s)) % s;
+
+	std::cout << ans << std::endl;
+
+	return EXIT_SUCCESS;
 }

@@ -1,14 +1,16 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-	int x;
-	cin >> x;
+int main(int argc, char* argv) {
+	int x = 0;
+	int a = 0;
+	int ans = 0;
 
-	int a = x * x;
-	int ans = a * (a + x + 1) + x + 1;
+	std::cin >> x;
 
-	cout << ans << endl;
+	a = x * x;
+	ans = a * (a + x + 1) + x + 1;
 
-	return 0;
+	std::cout << ans << std::endl;
+
+	return EXIT_SUCCESS;
 }

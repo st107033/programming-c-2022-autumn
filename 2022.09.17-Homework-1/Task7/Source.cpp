@@ -1,14 +1,16 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-	int a, b;
-	cin >> a >> b;
+int main(int argc, char* argv) {
+	int a = 0; 
+	int b = 0;
+
+	std::cin >> a >> b;
 
 	a += b;
 	b = a - b;
 	a = a - b;
-	cout << a << " " << b << endl;
 
-	return 0;
+	std::cout << a << " " << b << std::endl;
+
+	return EXIT_SUCCESS;
 }

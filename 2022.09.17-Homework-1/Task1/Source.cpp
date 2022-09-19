@@ -1,11 +1,11 @@
 #include <iostream>
 
-using namespace std;
+int main(int argc, char* argv) {
+	int n = 0;
 
-int main() {
-	int n;
-	cin >> n;
-	cout << "The next number for the number " << n << " is " << n + 1 << endl << "The previous number for the number " << n << " is " << n - 1 << endl;
+	std::cin >> n;
 
-	return 0;
+	std::cout << "The next number for the number " << n << " is " << n + 1 << std::endl << "The previous number for the number " << n << " is " << n - 1 << std::endl;
+
+	return EXIT_SUCCESS;
 }

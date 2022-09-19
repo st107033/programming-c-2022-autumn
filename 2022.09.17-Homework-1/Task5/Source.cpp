@@ -1,12 +1,14 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-	int n, ans;
-	cin >> n;
+int main(int argc, char* argv) {
+	int n = 0; 
+	int ans = 0;
+
+	std::cin >> n;
 
 	ans = (n % 10) + ((n % 100) / 10) + (n / 100);
-	cout << ans << endl;
 
-	return 0;
+	std::cout << ans << std::endl;
+
+	return EXIT_SUCCESS;
 }

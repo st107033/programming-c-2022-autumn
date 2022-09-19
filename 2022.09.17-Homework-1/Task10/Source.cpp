@@ -1,12 +1,15 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-	int a, b, n = 0;
-	cin >> a >> b;
-	while (a > 0) {
-		n++;
-		a /= b;
-	}
-	cout << n << endl;
+int main(int argc, char* argv) {
+	int a = 0;
+	int b = 0;
+	int n = 0;
+
+	std::cin >> a >> b;
+	
+	n = a * pow(b, -1);
+
+	std::cout << n;
+
+	return EXIT_SUCCESS;
 }

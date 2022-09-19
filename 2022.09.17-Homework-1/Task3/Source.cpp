@@ -1,11 +1,12 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-	int N, K;
-	cin >> N >> K;
+int main(int argc, char* argv) {
+	int N = 0;
+	int K = 0;
 
-	cout << K % N << endl;
+	std::cin >> N >> K;
 
-	return 0;
+	std::cout << K % N << std::endl;
+
+	return EXIT_SUCCESS;
 }
