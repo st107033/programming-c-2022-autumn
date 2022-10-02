@@ -10,7 +10,7 @@ int main(int argc, char* argv) {
 	b = a - b;
 	a = a - b;
 
-	std::cout << a << " " << b << std::endl;
+	std::cout << a << " " << b;
 
 	return EXIT_SUCCESS;
 }

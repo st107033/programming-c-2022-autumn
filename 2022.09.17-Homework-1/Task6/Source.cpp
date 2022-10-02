@@ -8,7 +8,7 @@ int main(int argc, char* argv) {
 
 	ans = n + 2 - (n % 2);
 
-	std::cout << ans << std::endl;
+	std::cout << ans;
 
 	return EXIT_SUCCESS;
 }

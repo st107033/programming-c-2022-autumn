@@ -8,7 +8,7 @@ int main(int argc, char* argv) {
 
 	ans = (n % 10) + ((n % 100) / 10) + (n / 100);
 
-	std::cout << ans << std::endl;
+	std::cout << ans;
 
 	return EXIT_SUCCESS;
 }

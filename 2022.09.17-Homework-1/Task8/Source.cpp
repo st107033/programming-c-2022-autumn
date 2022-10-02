@@ -15,7 +15,7 @@ int main(int argc, char* argv) {
 	t1 = 3600 * h1 + 60 * m1 + s1;
 	t2 = 3600 * h2 + 60 * m2 + s2;
 
-	std::cout << t2 - t1 << std::endl;
+	std::cout << t2 - t1;
 
 	return EXIT_SUCCESS;
 }

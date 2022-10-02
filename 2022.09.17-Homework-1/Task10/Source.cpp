@@ -7,7 +7,7 @@ int main(int argc, char* argv) {
 
 	std::cin >> a >> b;
 	
-	n = a * pow(b, -1);
+	n = a + (a - b < 0) * (b - a);
 
 	std::cout << n;
 
