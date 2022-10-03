@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv) {
-
+int main(int argc, char* argv[]) {
 	int x = 0;
 	int y = 0;
 	int x1 = 0;
@@ -9,7 +8,7 @@ int main(int argc, char* argv) {
 
 	std::cin >> x >> y >> x1 >> y1;
 
-	if ((x == x1) || (y == y1) || (abs(y1 - y) == abs(x1 - x))) {
+	if ((x == x1) || (y == y1) || ((y1 - y) * (y1 - y) == (x1 - x) * (x1 - x))) {
 		std::cout << "YES";
 	}
 	else {

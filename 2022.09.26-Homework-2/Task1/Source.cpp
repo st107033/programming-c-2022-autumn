@@ -1,9 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv) {
-
-	setlocale(LC_ALL, "Russian");
-
+int main(int argc, char* argv[]) {
 	int n = 0;
 	int x = 0;
 	int y = 0;
@@ -17,127 +14,126 @@ int main(int argc, char* argv) {
 
 	switch (z) {
 	case 1:
-		std::cout << "сто ";
+		std::cout << "sto ";
 		break;
 	case 2:
-		std::cout << "двести ";
+		std::cout << "dvesti ";
 		break;
 	case 3:
-		std::cout << "триста ";
+		std::cout << "trista ";
 		break;
 	case 4:
-		std::cout << "четыреста ";
+		std::cout << "chetyrista ";
 		break;
 	case 5:
-		std::cout << "пятьсот ";
+		std::cout << "pyatsot ";
 		break;
 	case 6:
-		std::cout << "шестьсот ";
+		std::cout << "shestsot ";
 		break;
 	case 7:
-		std::cout << "семьсот ";
+		std::cout << "semsot ";
 		break;
 	case 8:
-		std::cout << "восемьсот ";
+		std::cout << "vosemsot ";
 		break;
 	case 9:
-		std::cout << "девятьсот ";
+		std::cout << "devyatsot ";
 		break;
 	}
 
 	if (y == 1) {
 		switch (x) {
 		case 0:
-			std::cout << "десять ";
+			std::cout << "desyat ";
 			break;
 		case 1:
-			std::cout << "одиннадцать ";
+			std::cout << "odinnadtsat ";
 			break;
 		case 2:
-			std::cout << "двенадцать ";
+			std::cout << "dvenadsat ";
 			break;
 		case 3:
-			std::cout << "тринадцать ";
+			std::cout << "trinadsat ";
 			break;
 		case 4:
-			std::cout << "четырнадцать ";
+			std::cout << "chetyrnadsat ";
 			break;
 		case 5:
-			std::cout << "пятнадцать ";
+			std::cout << "pyatnadsat ";
 			break;
 		case 6:
-			std::cout << "шестнадцать ";
+			std::cout << "shestnadsat ";
 			break;
 		case 7:
-			std::cout << "семнадцать ";
+			std::cout << "semnadsat ";
 			break;
 		case 8:
-			std::cout << "восемнадцать ";
+			std::cout << "vosemnadsat ";
 			break;
 		case 9:
-			std::cout << "девятнадцать ";
+			std::cout << "devyatnadsat ";
 			break;
 		}
-		std::cout << "бананов";
+		std::cout << "bananov";
 	}
 	else {
 		switch (y) {
 		case 2:
-			std::cout << "двадцать ";
+			std::cout << "dvatsat ";
 			break;
 		case 3:
-			std::cout << "тридцать ";
+			std::cout << "tridsat ";
 			break;
 		case 4:
-			std::cout << "сорок ";
+			std::cout << "sorok ";
 			break;
 		case 5:
-			std::cout << "пятьдесят ";
+			std::cout << "pyatdesyat ";
 			break;
 		case 6:
-			std::cout << "шестьдесят ";
+			std::cout << "shestdesyat ";
 			break;
 		case 7:
-			std::cout << "семьдесят ";
+			std::cout << "semdesyat ";
 			break;
 		case 8:
-			std::cout << "восемьдесят ";
+			std::cout << "vosemdesyat ";
 			break;
 		case 9:
-			std::cout << "девяносто ";
+			std::cout << "devyanosto ";
 			break;
 		}
-
 		switch (x) {
 		case 0:
-			std::cout << "бананов";
+			std::cout << "bananov";
 			break;
 		case 1:
-			std::cout << "один банан";
+			std::cout << "odin banan";
 			break;
 		case 2:
-			std::cout << "два банана";
+			std::cout << "dva banana";
 			break;
 		case 3:
-			std::cout << "три банана";
+			std::cout << "tri banana";
 			break;
 		case 4:
-			std::cout << "четыре банана";
+			std::cout << "chetyre banana";
 			break;
 		case 5:
-			std::cout << "пять бананов";
+			std::cout << "pyat bananov";
 			break;
 		case 6:
-			std::cout << "шесть бананов";
+			std::cout << "shest bananov";
 			break;
 		case 7:
-			std::cout << "семь бананов";
+			std::cout << "sem bananov";
 			break;
 		case 8:
-			std::cout << "восемь бананов";
+			std::cout << "vosem bananov";
 			break;
 		case 9:
-			std::cout << "девять бананов";
+			std::cout << "devyat bananov";
 			break;
 		}
 	}

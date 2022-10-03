@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv) {
-
+int main(int argc, char* argv[]) {
 	int m = 0;
 	int n = 0;
 	int x = 0;

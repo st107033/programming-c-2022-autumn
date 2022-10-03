@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv) {
-
+int main(int argc, char* argv[]) {
 	int k = 0;
 
 	std::cin >> k;
