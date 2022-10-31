@@ -10,7 +10,7 @@ int main(int argc, char* argv[]) {
 	if (n <= k) {
 		std::cout << 2 * m;
 	}
-	else if (2*n % k == 0) {
+	else if (2 * n % k == 0) {
 		std::cout << m * (2 * n / k);
 	}
 	else {

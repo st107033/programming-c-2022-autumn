@@ -7,7 +7,7 @@ int main(int argc, char* argv[]) {
 
 	std::cin >> n >> m >> k;
 
-	if (((k % n == 0) || (k % m == 0)) && (k <= n*m)) {
+	if (((k % n == 0) || (k % m == 0)) && (k <= n * m)) {
 		std::cout << "YES";
 	}
 	else {
