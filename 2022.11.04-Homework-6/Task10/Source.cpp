@@ -6,6 +6,7 @@ int main(int argc, char* argv[]) {
     bool c2[N]{ 0 };
     int n1 = 0;
     int n2 = 0;
+    int maxn = 0;
 
     std::cin >> n1 >> n2;
 
@@ -13,14 +14,20 @@ int main(int argc, char* argv[]) {
         int buf = 0;
         std::cin >> buf;
         c1[buf] = 1;
+        if (maxn < buf) {
+            maxn = buf;
+        }
     }
     for (int i = 0; i < n2; ++i) {
         int buf = 0;
         std::cin >> buf;
         c2[buf] = 1;
+        if (maxn < buf) {
+            maxn = buf;
+        }
     }
 
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i <= maxn; ++i) {
         if ((c1[i] && c2[i]) == 1) {
             std::cout << i << " ";
         }

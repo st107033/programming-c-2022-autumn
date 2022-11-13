@@ -21,15 +21,15 @@ int main(int argc, char* argv[]) {
             ans = a[i];
             break;
         }
-        else if (dif >= abs(a[i] - x)) {
-            if ((dif == abs(a[i] - x)) && (minn > a[i] - x)) {
+        else if (dif >= (a[i] >= x ? a[i] - x : x - a[i])) {
+            if ((dif == (a[i] >= x ? a[i] - x : x - a[i])) && (minn > a[i] - x)) {
                 ans = a[i];
                 minn = a[i] - x;
             }
-            else if (dif > abs(a[i] - x)) {
+            else if (dif > (a[i] >= x ? a[i] - x : x - a[i])) {
                 ans = a[i];
                 minn = a[i] - x;
-                dif = abs(a[i] - x);
+                dif = (a[i] >= x ? a[i] - x : x - a[i]);
             }
         }
     }
