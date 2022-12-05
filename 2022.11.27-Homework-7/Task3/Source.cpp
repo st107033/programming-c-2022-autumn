@@ -28,6 +28,9 @@ int main(int argc, char* argv[]) {
 		}
 		std::cout << "\n";
 	}
+	for (int i = 0; i < n; ++i) {
+		delete[] a[i];
+	}
 	delete[] a;
 
 	return EXIT_SUCCESS;
