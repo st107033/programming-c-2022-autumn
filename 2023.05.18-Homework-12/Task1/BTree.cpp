@@ -55,22 +55,24 @@ Node*& BTree::GetNode(Node*& root, int element)
 Node* BTree::Extract(Node*& root)
 {
 	Node* extracted = root;
-
 	if (root->right != nullptr) {
 		Node* temp = root->right;
 		while (temp->left != nullptr) {
 			temp = temp->left;
 		}
-
-		if (root->left != nullptr) temp->left = root->left;
+		if (root->left != nullptr) {
+			temp->left = root->left;
+		}
 		root = root->right;
 	}
 	else {
-		if (root->left != nullptr) root = root->left;
-
-		else root = nullptr;
+		if (root->left != nullptr) {
+			root = root->left;
+		}
+		else {
+			root = nullptr;
+		}
 	}
-
 	return extracted;
 }
 
