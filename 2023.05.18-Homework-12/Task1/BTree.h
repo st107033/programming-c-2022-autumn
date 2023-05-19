@@ -2,16 +2,14 @@
 #include <ostream>
 
 
-struct Node
-{
+struct Node {
 	int data;
 	Node* left;
 	Node* right;
 	Node(int data, Node* left = nullptr, Node* right = nullptr) : data(data), left(left), right(right) {}
 };
 
-class BTree
-{
+class BTree {
 private:
 	Node* root;
 
